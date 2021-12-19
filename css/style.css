@@ -1,8 +1,18 @@
+:root{
+--yale-blue: #054a91ff;
+--yale-blue-light: #265b8f;
+--steel-blue: #3e7cb1ff;
+--iceberg: #81a4cdff;
+--alice-blue: #dbe4eeff;
+--heat-wave: #ec9c52;
+}
+
 body {
     margin: 0;
     padding: 0;
     font-family: 'Lato', sans-serif;
-    background: #D1F5BE;
+    background-color: var(--alice-blue);
+    
     position: relative;
     min-height: 100%;
     height: fit-content;
@@ -15,7 +25,7 @@ header {
     top: 0;
     left: 0;
     padding: 0 100px;
-    background: #4B3B40;
+    background-color: var(--iceberg);
     width: 100%;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
@@ -23,7 +33,7 @@ header {
 }
 
 header .logo {
-    color: #9DB17C;
+    color: var(--yale-blue);
     height: 50px;
     line-height: 50px;
     font-size: 24px;
@@ -54,7 +64,7 @@ header nav ul li.submenu:before{
     content: "\f0d7"; /* FontAwesome Unicode */
     position: absolute;
     line-height: 50px;
-    color: #9DB17C;
+    color: var(--yale-blue);
     right: 5px;
     font-weight: 900;
 }
@@ -65,7 +75,7 @@ header nav ul li.current.submenu:before{
 header nav ul li ul{
     position: absolute;
     left: 0;
-    background: #4B3B40;
+    background-color: var(--iceberg);
     display: none;
 }
 header nav ul li.current ul{
@@ -81,7 +91,7 @@ header nav ul li a {
     height: 50px;
     line-height: 50px;
     padding: 0 20px;
-    color: #9DB17C;
+    color: var(--yale-blue);
     text-decoration: none;   
     display: block;
 }
@@ -90,12 +100,12 @@ header nav ul li a i {
 }
 header nav ul li a:hover,
 header nav ul li a.current {
-    color: #9DB17C;
-    background: #4B3B40;
+    color: var(--iceberg);
+    background-color: var(--yale-blue);
 }
 
 .menu-toggle{
-    color: #9DB17C;
+    color: var(--yale-blue);
     float: right;
     line-height: 50px;
     font-size: 24px;
@@ -104,7 +114,7 @@ header nav ul li a.current {
     padding: 13px 0px;
 }
 .cart {
-    color: #9DB17C;
+    color: var(--yale-blue);
     float: 0 0 50px;
     line-height: 50px;
     font-size: 24px;
@@ -124,7 +134,7 @@ header nav ul li a.current {
         position: absolute;
         width: 100%;
         height: calc(100vh - 50px);
-        background: #4B3B40;
+        background-color: var(--iceberg);
         top: 50px;
         left: -100%;
         -webkit-transition: 0.5s;
@@ -145,7 +155,7 @@ header nav ul li a.current {
     }
     header nav ul li.current ul{
         position: relative;
-        background: #4B3B40;
+        background-color: var(--iceberg);
     }
     header nav ul li ul li{
         width: 100%;
@@ -154,7 +164,7 @@ header nav ul li a.current {
 }
 footer {
     height: 40%;
-    background-color: #4B3B40;
+    background-color: var(--iceberg);
     margin-top: -3rem;
     width: 100%;
 }
@@ -170,8 +180,8 @@ footer {
     margin: .75rem .75rem;
     top: 50px;    
     border-radius: 5px;
-    background-color: #4B3B40;
-    color:#9DB17C;
+    background-color: var(--iceberg);
+    color:var(--yale-blue);
     padding: 20px;
     font-size: 1.2rem;
 
@@ -237,7 +247,7 @@ label {
     border-radius: 10px;
     text-align: center;
     background-color: #63755A;
-    color:#4B3B40;
+    color:var(--iceberg);
     transition: .3s;
     
 }
@@ -263,8 +273,8 @@ label {
 
 .carousel-item {
     height: 34rem;
-    background: black;
-    color: #4B3B40;
+    background-color: var(--alice-blue);
+    color: var(--iceberg);
     position: relative;
     z-index: -2;
     background-position: center;
@@ -281,14 +291,14 @@ label {
 .btn,
 .btn:focus,
 .btn:active {
-    background: #9DB17C;
-    color: #4B3B40;
+    background-color: var(--yale-blue);
+    color: var(--iceberg);
     border: none;
     outline: none !important;
     box-shadow: none !important;
 }
 .btn:hover {
-    background: #9DA27C;
+    background-color: var(--yale-blue-light);
     border: none;
 }
 div.container.marketing {
